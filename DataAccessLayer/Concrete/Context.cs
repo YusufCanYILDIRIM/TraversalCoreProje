@@ -14,7 +14,7 @@ namespace DataAccessLayer.Concrete
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             //sql'de baglanti adini yazıyoruz
-            optionsBuilder.UseSqlServer("server = ASUS;database=TraversalDB;integrated security=true;");
+            optionsBuilder.UseSqlServer("server = ASUS;database=TraversalDB;TrustServerCertificate=True;integrated security=true;");
         }
 
         //<> arasındakiler entity sonrakiler veritabanındaki table olucak
